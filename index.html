@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div id="display"></div>
+            <div class="buttons">
+                <div class="button">C</div>
+                <div class="button">CE</div>
+                <div class="button">%</div>
+                <div class="button">←</div>
+                <div class="button">√</div>
+                <div class="button">^</div>
+                <div class="button">(</div>
+                <div class="button">)</div>
+                <div class="button">7</div>
+                <div class="button">8</div>
+                <div class="button">9</div>
+                <div class="button">/</div>
+                <div class="button">4</div>
+                <div class="button">5</div>
+                <div class="button">6</div>
+                <div class="button">*</div>
+                <div class="button">1</div>
+                <div class="button">2</div>
+                <div class="button">3</div>
+                <div class="button">-</div>
+                <div class="button">0</div>
+                <div class="button">.</div>
+                <div class="button" id="equal">=</div>
+                <div class="button">+</div>
+            </div>
+
+            <h3>History</h3>
+            <ul id="historyList"></ul>
+
+            <h3>Matrix Multiplication</h3>
+            <label>Matrix A:</label>
+            <textarea id="matrixA" rows="4" cols="30"></textarea><br>
+            <label>Matrix B:</label>
+            <textarea id="matrixB" rows="4" cols="30"></textarea><br>
+            <button onclick="multiplyMatrices()">Multiply</button>
+            <pre id="matrixResult"></pre>
+        </div>
+    </section>
+
+    <button id="darkToggle">🌙 Toggle Dark Mode</button>
+
+    <script src="index.js"></script>
+</body>
+</html>
